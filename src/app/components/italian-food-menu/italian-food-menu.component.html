@@ -1,0 +1,11 @@
+
+<div class="menu-container">
+  <div class="menu-card" *ngFor="let plate of menuItems">
+    <img [src]="plate.image" [alt]="plate.name">
+    <div class="menu-card-content">
+      <h2 class="menu-card-title">{{ plate.name }}</h2>
+      <p class="menu-card-description">{{ plate.description }}</p>
+      <p class="menu-card-price">{{ plate.price }}</p>
+    </div>
+  </div>
+</div>

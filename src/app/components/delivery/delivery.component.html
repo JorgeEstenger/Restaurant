@@ -1,0 +1,13 @@
+<div class="mt-5 container menu-group">
+<div class="menu-item" *ngFor="let plate of menuItems">
+  <img [src]="plate.image">
+  <div class="menu-item-content">
+    <h2 class="menu-item-title">{{plate.name}}</h2>
+    <p class="menu-item-description">{{plate.description}}</p>
+    <p class="menu-item-price">{{plate.price}}</p>
+    <button class="btn" routerLinkActive="active" routerLink="/formulario">Shop Now</button>
+  </div>
+</div>
+</div>
+
+

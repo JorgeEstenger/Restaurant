@@ -1,0 +1,65 @@
+img {
+  overflow: hidden;
+  position: relative;
+}
+ h1 {
+  border-bottom: 8px solid #fafcff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px ;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:  1px 1px 1px #FFF, 2px 2px 2px #111,
+  6px 6px 4px #222
+ }
+
+ h2{
+  border-color: rgb(0, 0, 0);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px ;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:   1px 1px 1px #FFF, 2px 2px 2px #111,
+  2px 4px 3px #222
+
+ }
+
+ button {
+  position: absolute;
+  top: 134%;
+  right: 47.5%;
+ }
+
+ section {
+  position: absolute;
+  top: 145%;
+  right: 9.5%;
+  left: 10.0%;
+  display: flex;
+  width: 1000px;
+  height: 430px;
+}
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: .5s ease;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 300px;
+  filter: contrast(120%);
+}
+
+p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+
