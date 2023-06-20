@@ -1,19 +1,136 @@
-<div class="mt-5 container menu-group">
-<div class="menu-item" *ngFor="let plate of menuItems">
-  <img [src]="plate.image">
-  <div class="menu-item-content">
-    <h2 class="menu-item-title">{{plate.name}}</h2>
-    <p class="menu-item-description">{{plate.description}}</p>
-    <p class="menu-item-price">{{plate.price}}</p>
+<html>
+<body>
+<header>
+  <h1>Piazza Shoping-Cart</h1>
+</header>
+
+<section class="contenedor">
+  <div class="contenedor-items">
+    <div class="item">
+    <span class="titulo-item">Pizza Margharita</span>
+    <img src="\assets\pizza margarita.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+
+  <div class="item">
+    <span class="titulo-item">Lasagna</span>
+    <img src="\assets\lasagna.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Osso Buco</span>
+    <img src="\assets\Osso-Buco.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Risoto Milanesa</span>
+    <img src="\assets\risoto a la milanesa.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Sopa</span>
+    <img src="\assets\sopa.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Melanze</span>
+    <img src="\assets\melanzane-pixa-4.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Focaccia</span>
+    <img src="\assets\focaccia-wallpaper-19.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+  <div class="item">
+    <span class="titulo-item">Gnocchi</span>
+    <img src="\assets\gnocchi.jpg" width="100px" height="100px" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+
+  <div class="item">
+    <span class="titulo-item">Mushrooms Risoto</span>
+    <img src="\assets\mushrooms risoto.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
+    <button class="boton-item">Add to cart</button>
+  </div>
+
+
+  <div class="item">
+    <span class="titulo-item">Spaghetti Carbonara</span>
+    <img src="\assets\spaghetti carbonara.jpg" alt="" class="img-item">
+    <span class="precio-item">$15.00</span>
     <button class="boton-item">Add to cart</button>
   </div>
 </div>
-</div>
 
-<!--carrito compras-->
+<!--carrito -->
 <div class="carrito">
   <div class="header-carrito">
-    <h2>Tu Carrito</h2>
+    <h2>Your Car</h2>
+  </div>
+
+  <div class="carrito-items">
+    <div class="carrito-item">
+      <img src="\assets\pizza margarita.jpg" alt="" width="80px">
+      <div class="carrito-item-detalles">
+        <span class="carrito-item-titulo">Pizza Margarita</span>
+        <div class="selector-cantidad">
+          <i class="fa-solid fa-minus restar-cantidad"></i>
+          <input type="text" value="1" class="carrito-item-cantidad" disabled>
+          <i class="fa-solid fa-plus sumar-cantidad"></i>
+        </div>
+        <span class="carrito-item-precio">$15.00</span>
+      </div>
+      <span class="btn-eliminar">
+        <i class="fa-solid fa-trash"></i>
+      </span>
+    </div>
+
+    <div class="carrito-item">
+      <img src="\assets\lasagna.jpg" alt="" width="80px">
+      <div class="carrito-item-detalles">
+        <span class="carrito-item-titulo">Lasagna</span>
+        <div class="selector-cantidad">
+          <i class="fa-solid fa-minus restar-cantidad"></i>
+          <input type="text" value="2" class="carrito-item-cantidad" disabled>
+          <i class="fa-solid fa-plus sumar-cantidad"></i>
+        </div>
+        <span class="carrito-item-precio">$15.00</span>
+      </div>
+      <span class="btn-eliminar">
+        <i class="fa-solid fa-trash"></i>
+      </span>
+    </div>
+
+    <div class="carrito-total">
+      <div class="fila">
+        <strong>Tu Total</strong>
+        <span class="carrito-precio-total">
+          $30.00
+        </span>
+      </div>
+      <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+
   </div>
 </div>
-
+</section>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div class="mt-5 ms-5 contenedor-item">
+<div class="menu-item" *ngFor="let plate of menuItems">
+  <img [src]="plate.image">
+  <div class="menu-item-content">
+    <h2 class="menu-item-title">{{plate.name}}</h2>
+    <p class="menu-item-price">{{plate.price}}</p>
+    <button class="boton-item">Add to cart</button>
+  </div>
+</div>
+</div>
+
+<!--carrito compras-->
+
+<div class="cart-item justify-center"></div>
