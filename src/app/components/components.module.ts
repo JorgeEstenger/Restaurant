@@ -11,6 +11,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -19,7 +20,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     MenuComponent,
     DeliveryComponent,
     ItalianFoodMenuComponent,
-    FormularioComponent
+    FormularioComponent,
+
   ],
 
 exports: [
@@ -27,7 +29,8 @@ exports: [
     FooterComponent,
     HomeComponent,
     MenuComponent,
-    DeliveryComponent
+    DeliveryComponent,
+
 ],
   imports: [
     CommonModule,
